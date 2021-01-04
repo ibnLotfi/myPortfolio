@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 
 * {
     margin: 0;
@@ -187,6 +188,7 @@ html {
 }
 
 .presentation .max-width {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,9 +204,10 @@ html {
 
 
 .presentation p {
-    font-family: 'Apple Chancery', 'sans-serif';
-    font-size: 16px;
-    width: 570px;
+    width: 80%;
+    font-family:  cursive;
+    
+    font-size: 20px;
 }
 
 /* competences section styling start */
@@ -332,6 +335,96 @@ html {
     width: 70%;
 }
 
+
+
+
+
+/* ======  Processus styling section ======== */
+
+
+.processus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+.processus .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.processus .title h2 {
+    border-bottom: #000 solid 5px;
+}
+
+.processus .max-width .processus-content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.processus .max-width .processus-content .box {
+    margin-left: 0;
+    margin-right: 50px;
+    background: #2BDF1E;
+    border: #2BDF1E 0.5px solid;
+    /* box-shadow: 0 1px 1px #585858; */
+    border-radius: 6px;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.processus .max-width .processus-content .box .bottom-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 10px;
+    background: rgba(248, 248, 248, 0.959);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.processus .max-width .processus-content .box .bottom-box:hover{
+    transform: scale(1.1);
+    background: #2bdf1e69;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.processus .max-width .processus-content .box .logo{
+    font-size: 25px;
+    color: #fff;
+}
+
+.processus .max-width .processus-content .box .top-box {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
 /* realisation section styling start */
 
 .realisation {
@@ -401,6 +494,7 @@ html {
 .services .services-content .services-box{
     margin: 10px;
     background-color: #ffffff80;
+    width: 300px;
     /* opacity: 0.65; */
     height: 350px;
     display: flex;
@@ -410,7 +504,9 @@ html {
 }
 
 .services .services-content .services-box p{
-    max-width: 80%;
+    text-align: center;
+    height: 100px;
+    width: 85%;
 }
 
 .services .services-content .services-box img{
